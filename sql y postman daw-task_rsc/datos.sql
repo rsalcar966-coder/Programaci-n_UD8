@@ -1,0 +1,16 @@
+INSERT INTO tarea (titulo, descripcion, fecha_creacion, fecha_vencimiento, estado) VALUES
+('Configurar entorno', 'Instalar JDK 21 y configurar variables de entorno', '2026-03-01', '2026-03-02', 'COMPLETADA'),
+('Diseñar esquema DB', 'Crear el diagrama entidad-relación inicial', '2026-03-01', '2026-03-05', 'COMPLETADA'),
+('Implementar Entidades', 'Crear clases JPA para Tarea y Usuario', '2026-03-05', '2026-03-10', 'EN_PROGRESO'),
+('Configurar Spring Security', 'Implementar autenticación básica y JWT', '2026-03-10', '2026-03-15', 'PENDIENTE'),
+('Crear Repositorios', 'Extender JpaRepository para las entidades', '2026-03-05', '2026-03-07', 'COMPLETADA'),
+('Desarrollar Servicios', 'Lógica de negocio para la gestión de tareas', '2026-03-10', '2026-03-20', 'EN_PROGRESO'),
+('Validación de DTOs', 'Añadir anotaciones @NotNull y @Size en inputs', '2026-03-12', '2026-03-14', 'PENDIENTE'),
+('Pruebas Unitarias', 'Testear el servicio de creación de tareas', '2026-03-15', '2026-03-18', 'PENDIENTE'),
+('Optimizar Queries', 'Revisar logs de Hibernate para evitar N+1', '2026-03-18', '2026-03-25', 'PENDIENTE'),
+('Maquetación UI', 'Crear el dashboard principal con Thymeleaf', '2026-03-08', '2026-03-12', 'EN_PROGRESO'),
+('Integrar Swagger', 'Documentar la API con OpenAPI 3', '2026-03-20', '2026-03-22', 'PENDIENTE'),
+('Corregir Bug Login', 'Resolver error al refrescar el token', '2026-03-21', '2026-03-21', 'EN_PROGRESO'),
+('Configurar CORS', 'Permitir peticiones desde el frontend local', '2026-03-02', '2026-03-03', 'COMPLETADA'),
+('Exportar a PDF', 'Funcionalidad para descargar reporte de tareas', '2026-03-22', '2026-03-30', 'PENDIENTE'),
+('Revisión de Código', 'Pull Request final del módulo de persistencia', '2026-03-25', '2026-03-26', 'PENDIENTE');
