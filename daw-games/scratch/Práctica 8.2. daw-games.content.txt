@@ -1,0 +1,61 @@
+ 
+ 
+ 
+ 
+ 
+ 
+● Desarrollar un servicio que haga uso del repositorio. 
+● Crear un repositorio para gestionar la tabla de juegos. 
+2. Repositorios y servicios: 
+ 
+● Insertar registros en la base de datos para tener datos de prueba. 
+● Crear la base de datos y conectar la aplicación a la base de datos. 
+● Generar el modelo de datos en Java con las anotaciones necesarias. 
+1. Crear el modelo de datos y conectar con la base de datos: 
+ 
+ 
+Vamos a realizar una API Rest para gestionar nuestros juegos, el modelo es el siguiente: 
+ 
+Práctica 8.2. daw-games                    PROGRAMACIÓN (1º DAW) 
+ 
+ 
+ 
+ 
+----------------Page (0) Break----------------
+○ Solo se puede completar/descompletar un juego mediante el endpoint específico. 
+○ No se permite modificar el atributo completado. 
+la de hoy. 
+○ Cuando creamos un juego, si no se indica, se establece la fecha de lanzamiento como 
+● Reglas de negocio: 
+ 
+/juegos/descuento?genero=-----&porcentaje=---- 
+específico según el porcentaje indicado (en tanto por 1). PUT 
+○ Aplicar Descuento Masivo. Reduce el precio de todos los juegos de un género  
+/juegos/{id}/completar 
+○ Marcar/desmarcar un juego como completado (debe actuar como un interruptor). PUT 
+● Reto: 
+/juegos/exitos 
+○ El "Top 5" de Éxitos. Devuelve los 5 juegos con mayor número de descargas. GET 
+○ Buscar juegos en un rango de precios. GET /juegos/precio?min=--------&max=------- 
+○ Obtener los juegos base. GET /juegos/base 
+○ Obtener los DLCs. GET /juegos/dlc 
+○ Obtener las expansiones. GET /juegos/expansiones 
+parámetros). GET /juegos/plataforma?plataforma=------ 
+○ Buscar juegos por plataforma (que contenga la plataforma que se pasa por 
+GET /juegos/nombre?nombre=------ 
+○ Buscar juegos por nombre (que contenga el nombre que se pasa por parámetros). 
+○ Buscar juegos por género. GET /juegos/genero?genero=------ 
+○ Borrar un juego. DELETE /juegos/{id} 
+○ Modificar un juego. PUT /juegos/{id} 
+○ Crear un juego. POST /juegos 
+○ Obtener un juego mediante su ID. GET /juegos/{id} 
+○ Obtener todos los juegos. GET /juegos 
+● Juego:  
+3. Controladores. Debes desarrollar los siguientes endpoints: 
+ 
+Práctica 8.2. daw-games                    PROGRAMACIÓN (1º DAW) 
+ 
+ 
+ 
+ 
+----------------Page (1) Break----------------
